@@ -20,50 +20,83 @@
 }
 
 .project {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
-    &__one {
-        width: 100%;
-        min-height: 48%;
-        background-color: lightcoral;
-        transition: transform 0.4s, opacity 0.5s ease-in-out;
-        transform: translateX(-30%);
+
+
+    &__containers {
+        width: 50%;
+        margin: 0 auto;
+        min-height: 46%;
         opacity: 0;
-        border-bottom-right-radius: 10rem;
+        transition: transform 0.4s, opacity 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        border-radius: .5rem;
         overflow: hidden;
+        padding: 1rem;
+
+    }
+    &__one {
+        transform: translateX(-30%);   
     }
     &__two {
-        width: 100%;
-        min-height: 48%;
-        background-color: lightcoral;
-        transition: transform 0.4s, opacity 0.5s ease-in-out;
         transform: translateX(-30%);
-        opacity: 0;
-        border-top-right-radius: 10rem;
-        overflow: hidden;
     }
     &__three {
-        width: 100%;
-        min-height: 48%;
-        background-color: lightcoral;
-        transition: transform 0.4s, opacity 0.5s ease-in-out;
         transform: translateX(30%);
-        opacity: 0;
-        border-bottom-left-radius: 10rem;
-        overflow: hidden;
     }
     &__four {
-        width: 100%;
-        min-height: 48%;
-        background-color: lightcoral;
-        transition: transform 0.4s, opacity 0.5s ease-in-out;
         transform: translateX(30%);
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        border-radius: .5rem;
+    }
+
+    &__paragraph {
+        color: #fff;
+        font-size: 1.8rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    &__link:visited,
+    &__link:link {
+        color: #333;
+        text-decoration: none;
+        font-size: 1.6rem;
+        background-color: #fff;
+        padding: 0.8rem 1.2rem;
+        border-radius: .5rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__link::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: .5rem;
+        z-index: -1;
+        transition: transform 0.2s, opacity 0.3s linear;
+    }
+
+    &__link:hover::after {
+        transform: scale(1.3);
         opacity: 0;
-        border-top-left-radius: 10rem;
-        overflow: hidden;
     }
 }
 
