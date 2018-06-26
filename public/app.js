@@ -1,5 +1,5 @@
 //btn massive and jumbotron animation
-(function () {
+{
     const jumbotron = document.querySelector('.jumbotron');
     const massiveBtn = document.querySelector('.massive__button');
     const jumbotronTop = jumbotron.getBoundingClientRect().top;
@@ -12,9 +12,9 @@
             massiveBtn.classList.remove('active-btn');
         }
     });
-}());
+}
 
-(function () {
+{
     const links = document.querySelectorAll(".nav__item");
     const dropdownFollow = document.querySelector('.dropdown-background');
     const nav = document.querySelector('.nav');
@@ -54,15 +54,15 @@
 
     links.forEach((link) => link.addEventListener('mouseenter', enter));
     links.forEach((link) => link.addEventListener('mouseleave', leave));
-    links.forEach((link) => link.addEventListener('click', (e) =>{
+    /*links.forEach((link) => link.addEventListener('click', (e) =>{
         e.preventDefault();
-    }))
-}());
+    })) */
+}
 
 
 
 //Contact Modal
-(function (){
+{
     const modal = document.querySelector('.contact');
     const openModal = document.querySelector('.nav__icons--contact');
     const closeModal = document.querySelector('.close-btn');
@@ -94,11 +94,11 @@
     form.addEventListener('click', (e) => {
         e.preventDefault();
     });
+}
 
-}());
 
 //Slide in divs
-(function (){
+{
     const slideIn = document.querySelectorAll('.slide-in');
     function slideProjects() {
         slideIn.forEach(slide => {
@@ -110,4 +110,11 @@
         });
     };
     window.addEventListener('scroll', slideProjects);
-}());
+}
+
+//Dynamic date
+
+{
+    let date = new Date().getFullYear();
+    let date_span = document.getElementById('date').innerHTML = `${date}`;
+}

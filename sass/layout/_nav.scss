@@ -157,12 +157,13 @@
 }
 
 .dropdown-skills {
-    width: 40rem;
+    width: 45rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1;
+
     &__icon-container {
         width: 100%;
     }
@@ -190,6 +191,9 @@
     }
     &__icon--js {
         color: #f1e05a;
+    }
+    &__icon--react {
+        color: #00d8ff;
     }
     &__paragraph {
         font-size: 2rem;

@@ -1,0 +1,12 @@
+.footer {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__copyright {
+        font-size: 2rem;
+        color: #fff;
+    }
+}
