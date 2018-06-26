@@ -1,41 +1,75 @@
 .section-two {
     background-color: #fff;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
     width: 80%;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
-.jumbotron-two {
-    min-height: 20vh;
+.project-container {
     width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    &__year-container {
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    padding: 2rem;
+    &__one {
+        width: 100%;
+        min-height: 48%;
+        background-color: lightcoral;
+        transition: transform 0.4s, opacity 0.5s ease-in-out;
+        transform: translateX(-30%);
+        opacity: 0;
+        border-bottom-right-radius: 10rem;
+        overflow: hidden;
     }
-    &__year {
-        text-align: center;
-        color: #333;
-        font-size: 2rem;
+    &__two {
+        width: 100%;
+        min-height: 48%;
+        background-color: lightcoral;
+        transition: transform 0.4s, opacity 0.5s ease-in-out;
+        transform: translateX(-30%);
+        opacity: 0;
+        border-top-right-radius: 10rem;
+        overflow: hidden;
     }
-    &__span-one {
-        border-bottom: 1px solid rgb(216, 215, 215);
-        border-radius: .5rem;
-        width: 35%;
-        max-height: .1px;
+    &__three {
+        width: 100%;
+        min-height: 48%;
+        background-color: lightcoral;
+        transition: transform 0.4s, opacity 0.5s ease-in-out;
+        transform: translateX(30%);
+        opacity: 0;
+        border-bottom-left-radius: 10rem;
+        overflow: hidden;
     }
-    &__span-two {
-        border-bottom: 1px solid rgb(216, 215, 215);
-        border-radius: .5rem;
-        width: 35%;
-        max-height: .1px;
+    &__four {
+        width: 100%;
+        min-height: 48%;
+        background-color: lightcoral;
+        transition: transform 0.4s, opacity 0.5s ease-in-out;
+        transform: translateX(30%);
+        opacity: 0;
+        border-top-left-radius: 10rem;
+        overflow: hidden;
     }
 }
+
+//animation slide in
+.slide-in.active-slide {
+    opacity: 1;
+    transform: translateX(0%);
+}
+//animation slide in
