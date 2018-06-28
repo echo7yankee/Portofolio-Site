@@ -1,5 +1,6 @@
+
 .section-one {
-    width: auto;
+    width: 100%;
     min-height: 75vh;
     display: flex;
     flex-direction: column;
@@ -76,8 +77,32 @@
 //button active
 .massive__button.active-btn {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(-50%);
     z-index: 1;
 }
 //
+
+@media only screen and (max-width: 1050px) {
+    .jumbotron {
+        width: 80%;
+        &__header {
+            font-size: 7rem;
+        }
+    }
+    .massive__button {
+        font-size: 5rem;
+    }
+ }
+ @media only screen and (max-width: 768px) {
+    .jumbotron {
+        width: 95%;
+        &__header {
+            font-size: 6rem;
+        }
+    }
+    .massive__button {
+        font-size: 4rem;
+    }
+ }
+
 

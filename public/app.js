@@ -3,13 +3,19 @@
     const jumbotron = document.querySelector('.jumbotron');
     const massiveBtn = document.querySelector('.massive__button');
     const jumbotronTop = jumbotron.getBoundingClientRect().top;
+    const mobile = document.querySelector('.mobile');
+    const mobileTwo = document.querySelector('.mobile-two');
     window.addEventListener('scroll', () => {
         if (window.scrollY > jumbotronTop) {
             jumbotron.classList.add('active-jumbotron')
             massiveBtn.classList.add('active-btn');
+            mobile.classList.add('active-mobile');
+            mobileTwo.classList.add('active-mobile');
         } else {
             jumbotron.classList.remove('active-jumbotron')
             massiveBtn.classList.remove('active-btn');
+            mobile.classList.remove('active-mobile');
+            mobileTwo.classList.remove('active-mobile');
         }
     });
 }
@@ -17,6 +23,7 @@
 {
     const links = document.querySelectorAll(".nav__item");
     const dropdownFollow = document.querySelector('.dropdown-background');
+    const nav_links = document.querySelectorAll('.nav__link');
     const nav = document.querySelector('.nav');
 
     function enter() {
@@ -52,13 +59,12 @@
         dropdownFollow.classList.remove('active-open');
     }
 
-    links.forEach((link) => link.addEventListener('mouseenter', enter));
-    links.forEach((link) => link.addEventListener('mouseleave', leave));
-    /*links.forEach((link) => link.addEventListener('click', (e) =>{
+    links.forEach(link => link.addEventListener('mouseenter', enter));
+    links.forEach(link => link.addEventListener('mouseleave', leave));
+    nav_links.forEach(navLink => navLink.addEventListener('click', (e) => {
         e.preventDefault();
-    })) */
+    }))
 }
-
 
 
 //Contact Modal

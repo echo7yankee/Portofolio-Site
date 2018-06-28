@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+
 }
 
 body {
@@ -22,4 +23,31 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+
 }
+
+//MEDIA QUERIES
+
+@media only screen and (max-width: 1280px) {
+   html {
+       font-size: 59%;
+   }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 57.5%;
+    }
+ }
+
+ @media only screen and (max-width: 768px) {
+    html {
+        font-size: 53%;
+    }
+ }
+
+ @media only screen and (max-width: 500px) {
+    html {
+        font-size: 50.5%;
+    }
+ }
