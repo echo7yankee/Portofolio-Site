@@ -18,7 +18,7 @@ body {
     font-weight: 400;
     color: #777;
     line-height: 1.7;
-    background-image: linear-gradient(to right bottom,$color-primary, $color-primary-light), url('../img/background.jpeg');
+    background-image: linear-gradient(to right bottom,$color-primary, $color-primary-light), url('../img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -36,18 +36,18 @@ body {
 
 @media only screen and (max-width: 900px) {
     html {
-        font-size: 57.5%;
+        font-size: 57%;
     }
  }
 
  @media only screen and (max-width: 768px) {
     html {
-        font-size: 53%;
+        font-size: 55%;
     }
  }
 
  @media only screen and (max-width: 500px) {
     html {
-        font-size: 50.5%;
+        font-size: 52.5%;
     }
  }

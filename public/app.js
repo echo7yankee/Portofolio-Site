@@ -108,7 +108,7 @@
     const slideIn = document.querySelectorAll('.slide-in');
     function slideProjects() {
         slideIn.forEach(slide => {
-            if(window.scrollY > slide.getBoundingClientRect().top) {
+            if(window.scrollY > slide.getBoundingClientRect().top / .350) {
                 slide.classList.add('active-slide');
             }else {
                 slide.classList.remove('active-slide');
